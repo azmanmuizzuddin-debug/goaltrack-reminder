@@ -1,15 +1,18 @@
-State,City,Accommodation_Daily,Food_Daily,Transport_Daily,Expenditure_Daily,Description
-Kuala Lumpur,Bukit Bintang,150,60,30,100,City center shopping and luxury stays.
-Selangor,Shah Alam,100,40,20,50,Blue Mosque and local culture.
-Penang,George Town,120,50,25,80,UNESCO Heritage site and famous street food.
-Perak,Ipoh,90,40,20,60,Limestone caves and colonial architecture.
-Melaka,Melaka City,110,45,20,70,Historical sites and Jonker Street night market.
-Johor,Johor Bahru,130,50,30,90,Theme parks and gateway to Singapore.
-Pahang,Cameron Highlands,140,40,40,50,Tea plantations and cool weather.
-Terengganu,Redang Island,250,80,100,100,Crystal clear waters and snorkeling.
-Kelantan,Kota Bharu,70,30,15,40,Traditional Malay crafts and kite flying.
-Kedah,Langkawi,200,70,60,120,Duty-free shopping and beautiful beaches.
-Sabah,Kota Kinabalu,160,50,40,100,Mount Kinabalu and sunset views.
-Sarawak,Kuching,100,40,25,50,Cat city and river cruises.
-Negeri Sembilan,Port Dickson,130,50,30,60,Beach resorts near the city.
-Perlis,Kangar,60,25,15,30,Rural charm and paddy field views.
+State,City,Accommodation_Daily,Food_Daily,Transport_Daily,Expenditure_Daily,Description,Image_URL
+Kuala Lumpur,Bukit Bintang,150,60,30,100,Heart of KL shopping and luxury nightlife.,https://images.unsplash.com/photo-1596422846543-75c6fc18a593
+Kuala Lumpur,KLCC,250,100,30,150,Home to the iconic Petronas Twin Towers.,https://images.unsplash.com/photo-1544918877-460635b6d13e
+Selangor,Batu Caves,80,30,20,40,Famous rainbow stairs and limestone temples.,https://images.unsplash.com/photo-1541014848520-21390467558a
+Selangor,Sepang,120,40,50,60,Home to the F1 Circuit and Mitsui Outlet.,https://images.unsplash.com/photo-1632761358997-380d128d57d7
+Penang,George Town,120,50,25,80,UNESCO Heritage site with world-class street food.,https://images.unsplash.com/photo-1595834789379-ec0648873045
+Penang,Batu Ferringhi,200,80,40,100,Relaxing beach resorts and night markets.,https://images.unsplash.com/photo-1611316523996-369408092289
+Perak,Ipoh Old Town,90,40,20,60,Famous for white coffee and colonial history.,https://images.unsplash.com/photo-1616428741366-0775e533c375
+Perak,Pangkor Island,150,60,30,70,Beautiful beaches and fishing villages.,https://images.unsplash.com/photo-1589197331516-4d839303767b
+Melaka,Jonker Street,110,45,20,70,A historical walk through Peranakan culture.,https://images.unsplash.com/photo-1590494161245-037191d90f23
+Johor,LegoLand,220,70,50,150,Perfect for families and theme park lovers.,https://images.unsplash.com/photo-1563298723-dcfebaa392e3
+Johor,Desaru Coast,250,90,60,100,Premium beach escape with water parks.,https://images.unsplash.com/photo-1586944210214-4690382898dd
+Pahang,Cameron Highlands,140,40,40,50,Strawberry farms and cool tea plantations.,https://images.unsplash.com/photo-1590332563772-2433069e29a3
+Pahang,Genting Highlands,300,120,60,200,High-altitude entertainment city and casinos.,https://images.unsplash.com/photo-1583096238382-9907f1588665
+Terengganu,Redang Island,250,80,100,100,Pristine beaches and vibrant coral reefs.,https://images.unsplash.com/photo-1540206395-6880f94933af
+Kedah,Langkawi,180,60,50,120,Archipelago of 99 islands and cable car views.,https://images.unsplash.com/photo-1590247781123-6e3e5c942976
+Sabah,Mount Kinabalu,200,50,80,100,The highest peak in Southeast Asia.,https://images.unsplash.com/photo-1569300673326-809292376664
+Sarawak,Kuching Waterfront,100,40,25,50,Beautiful river cruises and cat statues.,https://images.unsplash.com/photo-1589197331454-04660e5170d1

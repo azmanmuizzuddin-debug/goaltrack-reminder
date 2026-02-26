@@ -2,88 +2,123 @@ import streamlit as st
 import pandas as pd
 import time
 from datetime import date
+import os
 
-# --- 1. GLOBAL SETTINGS ---
-st.set_page_config(page_title="N-AME Travel", page_icon="🦅")
+# --- 1. GLOBAL UI CONFIG ---
+st.set_page_config(page_title="N-AME Travel", page_icon="🦅", layout="centered")
 primary_teal = "#0CA38D"
 
 st.markdown(f"""
     <style>
-    .stButton>button {{ background-color: {primary_teal}; color: white; border-radius: 10px; border: none; }}
-    .result-card {{ background-color: #f8f9fa; padding: 20px; border-radius: 15px; border-left: 5px solid {primary_teal}; margin-bottom: 15px; }}
-    .brand {{ text-align: center; padding-bottom: 10px; }}
+    /* Fixed Button & Card Styles */
+    .stButton>button {{ background-color: {primary_teal}; color: white; border-radius: 12px; height: 3.5em; border: none; font-weight: bold; }}
+    .result-card {{ background-color: #f9f9f9; padding: 25px; border-radius: 20px; border-left: 8px solid {primary_teal}; margin-bottom: 20px; }}
+    
+    /* Force Logo to stay Large and Centered */
+    .logo-container {{
+        text-align: center;
+        width: 100%;
+        margin-top: 50px;
+    }}
+    .brand-icon {{ font-size: 100px !important; margin: 0; line-height: 1; }}
+    .brand-title {{ 
+        color: {primary_teal}; 
+        font-size: 60px !important; 
+        font-weight: 900; 
+        letter-spacing: 10px; 
+        margin-top: -10px;
+        text-transform: uppercase;
+    }}
     </style>
     """, unsafe_allow_html=True)
 
 # --- 2. DATA LOADING ---
 @st.cache_data
-def load_data():
-    # Ensure this matches your folder structure in VS Code
-    return pd.read_csv('travel-app/malaysia_travel.csv')
+def get_malaysia_data():
+    paths = ['malaysia_travel.csv', 'travel-app/malaysia_travel.csv']
+    for path in paths:
+        if os.path.exists(path):
+            return pd.read_csv(path)
+    return None
 
-try:
-    df = load_data()
-except Exception as e:
-    st.error(f"Error loading CSV: {e}")
-    st.stop()
+df = get_malaysia_data()
 
-# --- 3. STATE MANAGEMENT ---
+# --- 3. SESSION STATE ---
 if 'page' not in st.session_state:
     st.session_state.page = "splash"
 
 # --- 4. PAGE 1: SPLASH SCREEN ---
 if st.session_state.page == "splash":
-    st.markdown(f"<div style='text-align: center; padding-top: 150px;'><h1 style='font-size: 100px;'>🦅</h1><h1 style='color: {primary_teal}; font-size: 60px;'>N-AME</h1></div>", unsafe_allow_html=True)
+    st.markdown('<div class="logo-container" style="padding-top:100px;"><p class="brand-icon">🦅</p><p class="brand-title">N-AME</p></div>', unsafe_allow_html=True)
     time.sleep(2)
     st.session_state.page = "search"
     st.rerun()
 
-# --- 5. PAGE 2: SEARCH (MALAYSIA) ---
+# --- 5. PAGE 2: SEARCH DASHBOARD ---
 elif st.session_state.page == "search":
-    # Logo at the top of the name
-    st.markdown(f"<div class='brand'><h1>🦅</h1><h1 style='color:{primary_teal}; margin-top:-20px;'>N-AME</h1></div>", unsafe_allow_html=True)
+    # Logo Header
+    st.markdown('<div class="logo-container"><p class="brand-icon">🦅</p><p class="brand-title">N-AME</p></div>', unsafe_allow_html=True)
+
+    if df is None:
+        st.error("⚠️ CSV File not found! Check your folder.")
+        st.stop()
+
+    st.write("### ✈️ Plan Your Trip")
+    selected_state = st.selectbox("📍 Select State", sorted(df['State'].unique()))
+    selected_city = st.selectbox("🏙️ Select City/Spot", df[df['State'] == selected_state]['City'])
     
-    # Malaysia State & City Selection
-    selected_state = st.selectbox("📍 Select State", df['State'].unique())
-    city = st.selectbox("🏙️ Select City", df[df['State'] == selected_state]['City'])
-    
-    col1, col2 = st.columns(2)
-    with col1:
-        trip_date = st.date_input("📅 Travel Date", date.today())
-    with col2:
-        budget = st.number_input("💰 Total Budget ($)", min_value=0, value=1000)
+    col_a, col_b = st.columns(2)
+    with col_a:
+        travel_date = st.date_input("📅 Travel Date", date.today())
+    with col_b:
+        user_budget = st.number_input("💰 Budget ($)", min_value=10, value=1500)
 
     st.markdown("<br>", unsafe_allow_html=True)
     
+    # 2026 Width Standard
     btn_col1, btn_col2 = st.columns(2)
     with btn_col1:
-        if st.button("🔍 Search Now", use_container_width=True):
+        if st.button("🔍 Search Now", width="stretch"):
             st.session_state.page = "results"
-            st.session_state.city = city
-            st.session_state.budget = budget
+            st.session_state.city = selected_city
+            st.session_state.budget = user_budget
             st.rerun()
     with btn_col2:
-        with st.popover("⚙️ Filter Budget", use_container_width=True):
-            st.write("### Allocation")
-            st.slider("🏠 Accommodation", 0, 100, 40)
-            st.slider("🍔 Food", 0, 100, 20)
-            st.slider("🚗 Transport", 0, 100, 20)
+        with st.popover("⚙️ Filters", width="stretch"):
+            st.slider("🏠 Hotel (%)", 0, 100, 40)
+            st.slider("🍔 Food (%)", 0, 100, 20)
 
-# --- 6. PAGE 3: DIFFERENT RESULTS PAGE ---
+# --- 6. PAGE 3: DYNAMIC RESULTS ---
 elif st.session_state.page == "results":
-    city_info = df[df['City'] == st.session_state.city].iloc[0]
+    # CRITICAL: Re-fetch the data row here to ensure details aren't "missing"
+    city_data = df[df['City'] == st.session_state.city].iloc[0]
     
-    st.markdown(f"<h2 style='color: {primary_teal};'>{st.session_state.city}, {city_info['State']}</h2>", unsafe_allow_html=True)
+    st.markdown(f"<h1 style='color: {primary_teal}; margin-bottom:0;'>{st.session_state.city}</h1>", unsafe_allow_html=True)
+    st.caption(f"Location: {city_data['State']} | Date: {date.today()}")
     
-    # Real Data Card
-    st.markdown(f"""
-        <div class="result-card">
-            <h4>📍 Destination Overview</h4>
-            <p>{city_info['Description']}</p>
-            <p><b>Estimated Daily Cost:</b> ${city_info['Accommodation_Daily'] + city_info['Food_Daily']}</p>
-        </div>
-    """, unsafe_allow_html=True)
+    # Hero Image
+    if 'Image_URL' in city_data and pd.notna(city_data['Image_URL']):
+        st.image(city_data['Image_URL'], width="stretch")
+    
+    # Detailed Cards
+    col_left, col_right = st.columns([2, 1])
+    with col_left:
+        st.markdown(f"""
+            <div class="result-card">
+                <h4>📍 About {st.session_state.city}</h4>
+                <p>{city_data['Description']}</p>
+                <hr>
+                <p><b>Accommodation:</b> ${city_data['Accommodation_Daily']}/night</p>
+                <p><b>Daily Meals:</b> ${city_data['Food_Daily']}/day</p>
+            </div>
+        """, unsafe_allow_html=True)
+    
+    with col_right:
+        daily_total = city_data['Accommodation_Daily'] + city_data['Food_Daily'] + city_data['Transport_Daily']
+        days = int(st.session_state.budget / daily_total) if daily_total > 0 else 0
+        st.metric("Affordable Days", f"{days} Days")
+        st.metric("Budget Remaining", f"${st.session_state.budget % daily_total}")
 
-    if st.button("⬅️ Back to Search"):
+    if st.button("⬅️ Change Destination", width="stretch"):
         st.session_state.page = "search"
         st.rerun()
