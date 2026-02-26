@@ -85,8 +85,16 @@ elif st.session_state.page == "search":
             st.rerun()
     with btn_col2:
         with st.popover("⚙️ Filters", width="stretch"):
-            st.slider("🏠 Hotel (%)", 0, 100, 40)
-            st.slider("🍔 Food (%)", 0, 100, 20)
+            st.markdown(f"<h4 style='color: {primary_teal};'>Budget Allocation</h4>", unsafe_allow_html=True)
+            acc = st.slider("🏠 Accommodation (%)", 0, 100, 40)
+            food = st.slider("🍔 Food (%)", 0, 100, 20)
+            trans = st.slider("🚗 Transportation (%)", 0, 100, 20)
+            exp = st.slider("🛍️ Expenditure (%)", 0, 100, 20)
+            
+            total_pct = acc + food + trans + exp
+            st.write(f"**Total: {total_pct}%**")
+            if total_pct != 100:
+                st.warning("Must equal 100% to apply.")
 
 # --- 6. PAGE 3: DYNAMIC RESULTS ---
 elif st.session_state.page == "results":
