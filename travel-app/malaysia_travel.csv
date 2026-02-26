@@ -1,18 +1,378 @@
-State,City,Accommodation_Daily,Food_Daily,Transport_Daily,Expenditure_Daily,Description,Image_URL
-Kuala Lumpur,Bukit Bintang,150,60,30,100,Heart of KL shopping and luxury nightlife.,https://images.unsplash.com/photo-1596422846543-75c6fc18a593
-Kuala Lumpur,KLCC,250,100,30,150,Home to the iconic Petronas Twin Towers.,https://images.unsplash.com/photo-1544918877-460635b6d13e
-Selangor,Batu Caves,80,30,20,40,Famous rainbow stairs and limestone temples.,https://images.unsplash.com/photo-1541014848520-21390467558a
-Selangor,Sepang,120,40,50,60,Home to the F1 Circuit and Mitsui Outlet.,https://images.unsplash.com/photo-1632761358997-380d128d57d7
-Penang,George Town,120,50,25,80,UNESCO Heritage site with world-class street food.,https://images.unsplash.com/photo-1595834789379-ec0648873045
-Penang,Batu Ferringhi,200,80,40,100,Relaxing beach resorts and night markets.,https://images.unsplash.com/photo-1611316523996-369408092289
-Perak,Ipoh Old Town,90,40,20,60,Famous for white coffee and colonial history.,https://images.unsplash.com/photo-1616428741366-0775e533c375
-Perak,Pangkor Island,150,60,30,70,Beautiful beaches and fishing villages.,https://images.unsplash.com/photo-1589197331516-4d839303767b
-Melaka,Jonker Street,110,45,20,70,A historical walk through Peranakan culture.,https://images.unsplash.com/photo-1590494161245-037191d90f23
-Johor,LegoLand,220,70,50,150,Perfect for families and theme park lovers.,https://images.unsplash.com/photo-1563298723-dcfebaa392e3
-Johor,Desaru Coast,250,90,60,100,Premium beach escape with water parks.,https://images.unsplash.com/photo-1586944210214-4690382898dd
-Pahang,Cameron Highlands,140,40,40,50,Strawberry farms and cool tea plantations.,https://images.unsplash.com/photo-1590332563772-2433069e29a3
-Pahang,Genting Highlands,300,120,60,200,High-altitude entertainment city and casinos.,https://images.unsplash.com/photo-1583096238382-9907f1588665
-Terengganu,Redang Island,250,80,100,100,Pristine beaches and vibrant coral reefs.,https://images.unsplash.com/photo-1540206395-6880f94933af
-Kedah,Langkawi,180,60,50,120,Archipelago of 99 islands and cable car views.,https://images.unsplash.com/photo-1590247781123-6e3e5c942976
-Sabah,Mount Kinabalu,200,50,80,100,The highest peak in Southeast Asia.,https://images.unsplash.com/photo-1569300673326-809292376664
-Sarawak,Kuching Waterfront,100,40,25,50,Beautiful river cruises and cat statues.,https://images.unsplash.com/photo-1589197331454-04660e5170d1
+State,City,Accommodation_Daily,Food_Daily,Transport_Daily,Expenditure_Daily,Description,Image_URL,Rating,Distance_Hub,Travel_Type,Local_Dish
+Kuala Lumpur,Kuala Lumpur District 1,310,113,42,50,A beautiful spot in Kuala Lumpur perfect for Nature.,https://picsum.photos/seed/Kuala Lumpur1/400/250,4.3,125,Leisure,Cendol
+Kuala Lumpur,Kuala Lumpur District 2,115,109,27,50,A beautiful spot in Kuala Lumpur perfect for Nature.,https://picsum.photos/seed/Kuala Lumpur2/400/250,4.3,48,History,Cendol
+Kuala Lumpur,Kuala Lumpur District 3,361,45,15,50,A beautiful spot in Kuala Lumpur perfect for Nature.,https://picsum.photos/seed/Kuala Lumpur3/400/250,4.8,81,Foodie,Satay
+Kuala Lumpur,Kuala Lumpur District 4,321,110,41,50,A beautiful spot in Kuala Lumpur perfect for Adventure.,https://picsum.photos/seed/Kuala Lumpur4/400/250,4.4,20,Adventure,Cendol
+Kuala Lumpur,Kuala Lumpur District 5,102,107,16,50,A beautiful spot in Kuala Lumpur perfect for History.,https://picsum.photos/seed/Kuala Lumpur5/400/250,3.8,76,Leisure,Cendol
+Kuala Lumpur,Kuala Lumpur District 6,306,115,19,50,A beautiful spot in Kuala Lumpur perfect for Foodie.,https://picsum.photos/seed/Kuala Lumpur6/400/250,3.8,81,Leisure,Roti Canai
+Kuala Lumpur,Kuala Lumpur District 7,212,37,29,50,A beautiful spot in Kuala Lumpur perfect for Nature.,https://picsum.photos/seed/Kuala Lumpur7/400/250,3.5,12,Nature,Roti Canai
+Kuala Lumpur,Kuala Lumpur District 8,285,58,17,50,A beautiful spot in Kuala Lumpur perfect for Adventure.,https://picsum.photos/seed/Kuala Lumpur8/400/250,3.8,90,Leisure,Nasi Lemak
+Kuala Lumpur,Kuala Lumpur District 9,65,83,34,50,A beautiful spot in Kuala Lumpur perfect for Adventure.,https://picsum.photos/seed/Kuala Lumpur9/400/250,4.2,112,Leisure,Nasi Lemak
+Kuala Lumpur,Kuala Lumpur District 10,60,43,37,50,A beautiful spot in Kuala Lumpur perfect for Modern.,https://picsum.photos/seed/Kuala Lumpur10/400/250,4.2,34,History,Cendol
+Kuala Lumpur,Kuala Lumpur District 11,256,64,70,50,A beautiful spot in Kuala Lumpur perfect for Modern.,https://picsum.photos/seed/Kuala Lumpur11/400/250,4.9,97,History,Cendol
+Kuala Lumpur,Kuala Lumpur District 12,144,89,32,50,A beautiful spot in Kuala Lumpur perfect for Modern.,https://picsum.photos/seed/Kuala Lumpur12/400/250,3.8,17,Foodie,Cendol
+Kuala Lumpur,Kuala Lumpur District 13,136,59,12,50,A beautiful spot in Kuala Lumpur perfect for Modern.,https://picsum.photos/seed/Kuala Lumpur13/400/250,4.9,28,Modern,Laksa
+Kuala Lumpur,Kuala Lumpur District 14,186,111,28,50,A beautiful spot in Kuala Lumpur perfect for Leisure.,https://picsum.photos/seed/Kuala Lumpur14/400/250,4.1,13,Modern,Char Kway Teow
+Kuala Lumpur,Kuala Lumpur District 15,184,68,19,50,A beautiful spot in Kuala Lumpur perfect for Modern.,https://picsum.photos/seed/Kuala Lumpur15/400/250,4.6,57,Nature,Char Kway Teow
+Kuala Lumpur,Kuala Lumpur District 16,129,37,14,50,A beautiful spot in Kuala Lumpur perfect for History.,https://picsum.photos/seed/Kuala Lumpur16/400/250,3.7,24,Modern,Char Kway Teow
+Kuala Lumpur,Kuala Lumpur District 17,349,107,37,50,A beautiful spot in Kuala Lumpur perfect for Foodie.,https://picsum.photos/seed/Kuala Lumpur17/400/250,4.5,65,Nature,Char Kway Teow
+Kuala Lumpur,Kuala Lumpur District 18,256,97,80,50,A beautiful spot in Kuala Lumpur perfect for Leisure.,https://picsum.photos/seed/Kuala Lumpur18/400/250,3.7,87,Nature,Laksa
+Kuala Lumpur,Kuala Lumpur District 19,366,44,42,50,A beautiful spot in Kuala Lumpur perfect for Nature.,https://picsum.photos/seed/Kuala Lumpur19/400/250,4.5,120,Foodie,Laksa
+Kuala Lumpur,Kuala Lumpur District 20,341,107,57,50,A beautiful spot in Kuala Lumpur perfect for History.,https://picsum.photos/seed/Kuala Lumpur20/400/250,5.0,68,Nature,Laksa
+Kuala Lumpur,Kuala Lumpur District 21,334,36,77,50,A beautiful spot in Kuala Lumpur perfect for History.,https://picsum.photos/seed/Kuala Lumpur21/400/250,4.9,140,Foodie,Char Kway Teow
+Kuala Lumpur,Kuala Lumpur District 22,177,111,61,50,A beautiful spot in Kuala Lumpur perfect for Adventure.,https://picsum.photos/seed/Kuala Lumpur22/400/250,4.0,39,Adventure,Roti Canai
+Kuala Lumpur,Kuala Lumpur District 23,188,40,52,50,A beautiful spot in Kuala Lumpur perfect for Leisure.,https://picsum.photos/seed/Kuala Lumpur23/400/250,4.2,133,Foodie,Laksa
+Kuala Lumpur,Kuala Lumpur District 24,146,62,53,50,A beautiful spot in Kuala Lumpur perfect for Modern.,https://picsum.photos/seed/Kuala Lumpur24/400/250,4.3,43,Modern,Char Kway Teow
+Kuala Lumpur,Kuala Lumpur District 25,210,104,66,50,A beautiful spot in Kuala Lumpur perfect for Modern.,https://picsum.photos/seed/Kuala Lumpur25/400/250,4.8,47,Leisure,Nasi Lemak
+Kuala Lumpur,Kuala Lumpur District 26,161,44,50,50,A beautiful spot in Kuala Lumpur perfect for Nature.,https://picsum.photos/seed/Kuala Lumpur26/400/250,4.7,85,Foodie,Char Kway Teow
+Kuala Lumpur,Kuala Lumpur District 27,283,83,38,50,A beautiful spot in Kuala Lumpur perfect for Foodie.,https://picsum.photos/seed/Kuala Lumpur27/400/250,4.5,143,Nature,Nasi Lemak
+Kuala Lumpur,Kuala Lumpur District 28,309,95,66,50,A beautiful spot in Kuala Lumpur perfect for Adventure.,https://picsum.photos/seed/Kuala Lumpur28/400/250,4.3,35,History,Laksa
+Kuala Lumpur,Kuala Lumpur District 29,227,68,42,50,A beautiful spot in Kuala Lumpur perfect for Adventure.,https://picsum.photos/seed/Kuala Lumpur29/400/250,4.5,79,Nature,Roti Canai
+Selangor,Selangor District 1,366,65,23,50,A beautiful spot in Selangor perfect for Modern.,https://picsum.photos/seed/Selangor1/400/250,4.6,27,History,Char Kway Teow
+Selangor,Selangor District 2,69,98,73,50,A beautiful spot in Selangor perfect for Foodie.,https://picsum.photos/seed/Selangor2/400/250,4.3,52,Nature,Cendol
+Selangor,Selangor District 3,60,38,12,50,A beautiful spot in Selangor perfect for Adventure.,https://picsum.photos/seed/Selangor3/400/250,4.2,147,Leisure,Nasi Lemak
+Selangor,Selangor District 4,302,105,19,50,A beautiful spot in Selangor perfect for Modern.,https://picsum.photos/seed/Selangor4/400/250,4.5,18,Foodie,Laksa
+Selangor,Selangor District 5,382,85,59,50,A beautiful spot in Selangor perfect for Foodie.,https://picsum.photos/seed/Selangor5/400/250,3.8,117,Foodie,Cendol
+Selangor,Selangor District 6,156,84,62,50,A beautiful spot in Selangor perfect for Foodie.,https://picsum.photos/seed/Selangor6/400/250,3.6,79,Modern,Satay
+Selangor,Selangor District 7,290,76,32,50,A beautiful spot in Selangor perfect for Modern.,https://picsum.photos/seed/Selangor7/400/250,4.3,93,Modern,Nasi Lemak
+Selangor,Selangor District 8,179,103,18,50,A beautiful spot in Selangor perfect for Foodie.,https://picsum.photos/seed/Selangor8/400/250,4.3,29,Foodie,Nasi Lemak
+Selangor,Selangor District 9,374,72,23,50,A beautiful spot in Selangor perfect for Leisure.,https://picsum.photos/seed/Selangor9/400/250,4.0,16,Leisure,Nasi Lemak
+Selangor,Selangor District 10,336,65,39,50,A beautiful spot in Selangor perfect for Foodie.,https://picsum.photos/seed/Selangor10/400/250,3.6,29,Foodie,Nasi Lemak
+Selangor,Selangor District 11,192,55,26,50,A beautiful spot in Selangor perfect for Adventure.,https://picsum.photos/seed/Selangor11/400/250,3.7,35,Foodie,Nasi Lemak
+Selangor,Selangor District 12,227,120,75,50,A beautiful spot in Selangor perfect for Leisure.,https://picsum.photos/seed/Selangor12/400/250,3.5,138,Modern,Cendol
+Selangor,Selangor District 13,255,47,54,50,A beautiful spot in Selangor perfect for Nature.,https://picsum.photos/seed/Selangor13/400/250,4.4,49,Modern,Nasi Lemak
+Selangor,Selangor District 14,260,58,41,50,A beautiful spot in Selangor perfect for Adventure.,https://picsum.photos/seed/Selangor14/400/250,4.8,55,History,Roti Canai
+Selangor,Selangor District 15,257,104,71,50,A beautiful spot in Selangor perfect for Nature.,https://picsum.photos/seed/Selangor15/400/250,4.6,103,Modern,Cendol
+Selangor,Selangor District 16,390,113,17,50,A beautiful spot in Selangor perfect for Adventure.,https://picsum.photos/seed/Selangor16/400/250,3.9,13,History,Char Kway Teow
+Selangor,Selangor District 17,73,52,73,50,A beautiful spot in Selangor perfect for Foodie.,https://picsum.photos/seed/Selangor17/400/250,4.4,94,Leisure,Satay
+Selangor,Selangor District 18,261,96,80,50,A beautiful spot in Selangor perfect for Adventure.,https://picsum.photos/seed/Selangor18/400/250,4.1,31,History,Satay
+Selangor,Selangor District 19,152,39,44,50,A beautiful spot in Selangor perfect for History.,https://picsum.photos/seed/Selangor19/400/250,4.8,25,Leisure,Char Kway Teow
+Selangor,Selangor District 20,126,80,29,50,A beautiful spot in Selangor perfect for Adventure.,https://picsum.photos/seed/Selangor20/400/250,4.7,92,Modern,Cendol
+Selangor,Selangor District 21,353,103,43,50,A beautiful spot in Selangor perfect for Adventure.,https://picsum.photos/seed/Selangor21/400/250,3.6,63,Foodie,Cendol
+Selangor,Selangor District 22,315,40,79,50,A beautiful spot in Selangor perfect for Adventure.,https://picsum.photos/seed/Selangor22/400/250,3.6,34,History,Char Kway Teow
+Selangor,Selangor District 23,358,102,55,50,A beautiful spot in Selangor perfect for Foodie.,https://picsum.photos/seed/Selangor23/400/250,3.6,80,Nature,Satay
+Selangor,Selangor District 24,72,82,69,50,A beautiful spot in Selangor perfect for Modern.,https://picsum.photos/seed/Selangor24/400/250,4.5,79,History,Laksa
+Selangor,Selangor District 25,351,88,64,50,A beautiful spot in Selangor perfect for Nature.,https://picsum.photos/seed/Selangor25/400/250,4.7,47,Modern,Cendol
+Selangor,Selangor District 26,374,59,35,50,A beautiful spot in Selangor perfect for Modern.,https://picsum.photos/seed/Selangor26/400/250,3.6,76,Foodie,Roti Canai
+Selangor,Selangor District 27,234,93,33,50,A beautiful spot in Selangor perfect for Nature.,https://picsum.photos/seed/Selangor27/400/250,5.0,76,Leisure,Cendol
+Selangor,Selangor District 28,297,94,12,50,A beautiful spot in Selangor perfect for Leisure.,https://picsum.photos/seed/Selangor28/400/250,4.5,129,Foodie,Nasi Lemak
+Selangor,Selangor District 29,335,53,71,50,A beautiful spot in Selangor perfect for Leisure.,https://picsum.photos/seed/Selangor29/400/250,4.5,102,Nature,Laksa
+Penang,Penang District 1,104,43,49,50,A beautiful spot in Penang perfect for Foodie.,https://picsum.photos/seed/Penang1/400/250,4.3,69,History,Char Kway Teow
+Penang,Penang District 2,306,119,45,50,A beautiful spot in Penang perfect for Modern.,https://picsum.photos/seed/Penang2/400/250,3.8,87,Nature,Cendol
+Penang,Penang District 3,193,97,10,50,A beautiful spot in Penang perfect for Foodie.,https://picsum.photos/seed/Penang3/400/250,4.7,25,History,Cendol
+Penang,Penang District 4,261,118,31,50,A beautiful spot in Penang perfect for Leisure.,https://picsum.photos/seed/Penang4/400/250,4.5,25,Modern,Cendol
+Penang,Penang District 5,332,69,37,50,A beautiful spot in Penang perfect for Nature.,https://picsum.photos/seed/Penang5/400/250,4.6,46,History,Laksa
+Penang,Penang District 6,315,99,12,50,A beautiful spot in Penang perfect for Modern.,https://picsum.photos/seed/Penang6/400/250,3.7,126,Adventure,Roti Canai
+Penang,Penang District 7,274,99,56,50,A beautiful spot in Penang perfect for Leisure.,https://picsum.photos/seed/Penang7/400/250,4.0,105,Leisure,Laksa
+Penang,Penang District 8,354,76,11,50,A beautiful spot in Penang perfect for Nature.,https://picsum.photos/seed/Penang8/400/250,4.4,116,Modern,Roti Canai
+Penang,Penang District 9,334,74,16,50,A beautiful spot in Penang perfect for Leisure.,https://picsum.photos/seed/Penang9/400/250,3.7,14,Adventure,Satay
+Penang,Penang District 10,327,92,39,50,A beautiful spot in Penang perfect for Adventure.,https://picsum.photos/seed/Penang10/400/250,4.6,19,History,Roti Canai
+Penang,Penang District 11,352,50,29,50,A beautiful spot in Penang perfect for Modern.,https://picsum.photos/seed/Penang11/400/250,3.6,45,History,Satay
+Penang,Penang District 12,155,85,18,50,A beautiful spot in Penang perfect for Nature.,https://picsum.photos/seed/Penang12/400/250,4.2,42,Modern,Satay
+Penang,Penang District 13,176,116,21,50,A beautiful spot in Penang perfect for History.,https://picsum.photos/seed/Penang13/400/250,4.3,129,History,Roti Canai
+Penang,Penang District 14,398,89,69,50,A beautiful spot in Penang perfect for Foodie.,https://picsum.photos/seed/Penang14/400/250,4.4,5,History,Laksa
+Penang,Penang District 15,366,99,54,50,A beautiful spot in Penang perfect for Adventure.,https://picsum.photos/seed/Penang15/400/250,3.6,16,Adventure,Satay
+Penang,Penang District 16,209,107,53,50,A beautiful spot in Penang perfect for Adventure.,https://picsum.photos/seed/Penang16/400/250,4.0,53,Nature,Laksa
+Penang,Penang District 17,220,106,45,50,A beautiful spot in Penang perfect for Adventure.,https://picsum.photos/seed/Penang17/400/250,4.4,32,Nature,Cendol
+Penang,Penang District 18,247,91,29,50,A beautiful spot in Penang perfect for Foodie.,https://picsum.photos/seed/Penang18/400/250,4.3,133,Modern,Cendol
+Penang,Penang District 19,247,55,22,50,A beautiful spot in Penang perfect for Leisure.,https://picsum.photos/seed/Penang19/400/250,4.1,123,Leisure,Cendol
+Penang,Penang District 20,396,75,46,50,A beautiful spot in Penang perfect for Modern.,https://picsum.photos/seed/Penang20/400/250,4.5,11,Modern,Cendol
+Penang,Penang District 21,222,90,76,50,A beautiful spot in Penang perfect for History.,https://picsum.photos/seed/Penang21/400/250,3.6,95,Modern,Roti Canai
+Penang,Penang District 22,97,106,24,50,A beautiful spot in Penang perfect for Nature.,https://picsum.photos/seed/Penang22/400/250,4.1,78,Foodie,Nasi Lemak
+Penang,Penang District 23,191,67,68,50,A beautiful spot in Penang perfect for Nature.,https://picsum.photos/seed/Penang23/400/250,4.8,77,Modern,Laksa
+Penang,Penang District 24,304,110,18,50,A beautiful spot in Penang perfect for History.,https://picsum.photos/seed/Penang24/400/250,4.7,6,Foodie,Nasi Lemak
+Penang,Penang District 25,354,36,31,50,A beautiful spot in Penang perfect for Modern.,https://picsum.photos/seed/Penang25/400/250,4.0,130,Adventure,Laksa
+Penang,Penang District 26,314,48,66,50,A beautiful spot in Penang perfect for Modern.,https://picsum.photos/seed/Penang26/400/250,4.1,125,Nature,Char Kway Teow
+Penang,Penang District 27,103,92,48,50,A beautiful spot in Penang perfect for Modern.,https://picsum.photos/seed/Penang27/400/250,4.2,57,Leisure,Cendol
+Penang,Penang District 28,249,82,70,50,A beautiful spot in Penang perfect for History.,https://picsum.photos/seed/Penang28/400/250,3.6,118,Foodie,Satay
+Penang,Penang District 29,320,35,55,50,A beautiful spot in Penang perfect for Adventure.,https://picsum.photos/seed/Penang29/400/250,3.5,36,Leisure,Roti Canai
+Johor,Johor District 1,254,99,69,50,A beautiful spot in Johor perfect for History.,https://picsum.photos/seed/Johor1/400/250,4.9,64,Foodie,Cendol
+Johor,Johor District 2,171,61,10,50,A beautiful spot in Johor perfect for History.,https://picsum.photos/seed/Johor2/400/250,4.2,54,Leisure,Roti Canai
+Johor,Johor District 3,312,102,11,50,A beautiful spot in Johor perfect for Modern.,https://picsum.photos/seed/Johor3/400/250,4.1,52,Modern,Cendol
+Johor,Johor District 4,311,63,25,50,A beautiful spot in Johor perfect for History.,https://picsum.photos/seed/Johor4/400/250,3.9,131,Leisure,Nasi Lemak
+Johor,Johor District 5,137,44,54,50,A beautiful spot in Johor perfect for Leisure.,https://picsum.photos/seed/Johor5/400/250,4.5,33,Leisure,Satay
+Johor,Johor District 6,169,90,70,50,A beautiful spot in Johor perfect for Adventure.,https://picsum.photos/seed/Johor6/400/250,4.8,95,Modern,Roti Canai
+Johor,Johor District 7,271,104,63,50,A beautiful spot in Johor perfect for History.,https://picsum.photos/seed/Johor7/400/250,3.9,99,Adventure,Char Kway Teow
+Johor,Johor District 8,200,38,44,50,A beautiful spot in Johor perfect for Nature.,https://picsum.photos/seed/Johor8/400/250,4.4,145,History,Satay
+Johor,Johor District 9,397,62,79,50,A beautiful spot in Johor perfect for Leisure.,https://picsum.photos/seed/Johor9/400/250,4.4,140,History,Cendol
+Johor,Johor District 10,370,118,61,50,A beautiful spot in Johor perfect for Nature.,https://picsum.photos/seed/Johor10/400/250,4.3,116,Nature,Laksa
+Johor,Johor District 11,99,95,64,50,A beautiful spot in Johor perfect for Leisure.,https://picsum.photos/seed/Johor11/400/250,4.9,47,Modern,Nasi Lemak
+Johor,Johor District 12,282,51,20,50,A beautiful spot in Johor perfect for Adventure.,https://picsum.photos/seed/Johor12/400/250,3.5,104,Nature,Char Kway Teow
+Johor,Johor District 13,381,100,25,50,A beautiful spot in Johor perfect for History.,https://picsum.photos/seed/Johor13/400/250,4.6,67,Adventure,Laksa
+Johor,Johor District 14,79,88,46,50,A beautiful spot in Johor perfect for History.,https://picsum.photos/seed/Johor14/400/250,4.2,59,Modern,Char Kway Teow
+Johor,Johor District 15,265,45,10,50,A beautiful spot in Johor perfect for Foodie.,https://picsum.photos/seed/Johor15/400/250,4.2,32,Leisure,Nasi Lemak
+Johor,Johor District 16,309,48,49,50,A beautiful spot in Johor perfect for History.,https://picsum.photos/seed/Johor16/400/250,5.0,5,Adventure,Roti Canai
+Johor,Johor District 17,283,107,67,50,A beautiful spot in Johor perfect for Leisure.,https://picsum.photos/seed/Johor17/400/250,4.2,136,History,Cendol
+Johor,Johor District 18,125,46,46,50,A beautiful spot in Johor perfect for History.,https://picsum.photos/seed/Johor18/400/250,3.5,72,Foodie,Laksa
+Johor,Johor District 19,289,91,62,50,A beautiful spot in Johor perfect for Foodie.,https://picsum.photos/seed/Johor19/400/250,4.3,66,Nature,Laksa
+Johor,Johor District 20,317,67,27,50,A beautiful spot in Johor perfect for Leisure.,https://picsum.photos/seed/Johor20/400/250,3.6,126,Foodie,Satay
+Johor,Johor District 21,232,44,80,50,A beautiful spot in Johor perfect for Nature.,https://picsum.photos/seed/Johor21/400/250,4.9,67,Leisure,Cendol
+Johor,Johor District 22,246,79,42,50,A beautiful spot in Johor perfect for Adventure.,https://picsum.photos/seed/Johor22/400/250,4.1,139,History,Satay
+Johor,Johor District 23,247,49,42,50,A beautiful spot in Johor perfect for Modern.,https://picsum.photos/seed/Johor23/400/250,4.6,17,Leisure,Laksa
+Johor,Johor District 24,354,55,61,50,A beautiful spot in Johor perfect for History.,https://picsum.photos/seed/Johor24/400/250,4.9,145,History,Char Kway Teow
+Johor,Johor District 25,133,69,68,50,A beautiful spot in Johor perfect for History.,https://picsum.photos/seed/Johor25/400/250,4.1,127,Foodie,Nasi Lemak
+Johor,Johor District 26,316,64,62,50,A beautiful spot in Johor perfect for Nature.,https://picsum.photos/seed/Johor26/400/250,4.8,137,Modern,Char Kway Teow
+Johor,Johor District 27,117,31,33,50,A beautiful spot in Johor perfect for History.,https://picsum.photos/seed/Johor27/400/250,4.7,146,History,Cendol
+Johor,Johor District 28,326,103,51,50,A beautiful spot in Johor perfect for Modern.,https://picsum.photos/seed/Johor28/400/250,4.7,63,Modern,Cendol
+Johor,Johor District 29,379,107,24,50,A beautiful spot in Johor perfect for Nature.,https://picsum.photos/seed/Johor29/400/250,4.1,4,History,Roti Canai
+Perak,Perak District 1,151,75,64,50,A beautiful spot in Perak perfect for Modern.,https://picsum.photos/seed/Perak1/400/250,4.8,22,Nature,Cendol
+Perak,Perak District 2,114,102,80,50,A beautiful spot in Perak perfect for Adventure.,https://picsum.photos/seed/Perak2/400/250,4.0,42,Foodie,Roti Canai
+Perak,Perak District 3,256,64,14,50,A beautiful spot in Perak perfect for History.,https://picsum.photos/seed/Perak3/400/250,3.8,26,History,Laksa
+Perak,Perak District 4,257,43,43,50,A beautiful spot in Perak perfect for Leisure.,https://picsum.photos/seed/Perak4/400/250,4.9,10,Adventure,Cendol
+Perak,Perak District 5,55,46,34,50,A beautiful spot in Perak perfect for Leisure.,https://picsum.photos/seed/Perak5/400/250,4.6,43,Adventure,Cendol
+Perak,Perak District 6,386,41,68,50,A beautiful spot in Perak perfect for Modern.,https://picsum.photos/seed/Perak6/400/250,3.8,26,Nature,Char Kway Teow
+Perak,Perak District 7,74,94,69,50,A beautiful spot in Perak perfect for Foodie.,https://picsum.photos/seed/Perak7/400/250,4.1,148,Modern,Char Kway Teow
+Perak,Perak District 8,110,80,33,50,A beautiful spot in Perak perfect for Adventure.,https://picsum.photos/seed/Perak8/400/250,3.8,18,Nature,Nasi Lemak
+Perak,Perak District 9,71,50,59,50,A beautiful spot in Perak perfect for Modern.,https://picsum.photos/seed/Perak9/400/250,4.8,35,Adventure,Char Kway Teow
+Perak,Perak District 10,176,34,39,50,A beautiful spot in Perak perfect for Nature.,https://picsum.photos/seed/Perak10/400/250,4.5,84,Foodie,Roti Canai
+Perak,Perak District 11,70,58,50,50,A beautiful spot in Perak perfect for Nature.,https://picsum.photos/seed/Perak11/400/250,4.0,26,Leisure,Satay
+Perak,Perak District 12,291,104,11,50,A beautiful spot in Perak perfect for Modern.,https://picsum.photos/seed/Perak12/400/250,5.0,106,History,Char Kway Teow
+Perak,Perak District 13,226,58,60,50,A beautiful spot in Perak perfect for Nature.,https://picsum.photos/seed/Perak13/400/250,3.6,78,Foodie,Satay
+Perak,Perak District 14,262,88,74,50,A beautiful spot in Perak perfect for Leisure.,https://picsum.photos/seed/Perak14/400/250,4.1,87,Modern,Cendol
+Perak,Perak District 15,199,32,14,50,A beautiful spot in Perak perfect for Nature.,https://picsum.photos/seed/Perak15/400/250,4.3,130,Adventure,Char Kway Teow
+Perak,Perak District 16,281,119,42,50,A beautiful spot in Perak perfect for Nature.,https://picsum.photos/seed/Perak16/400/250,4.9,104,History,Nasi Lemak
+Perak,Perak District 17,82,111,79,50,A beautiful spot in Perak perfect for Foodie.,https://picsum.photos/seed/Perak17/400/250,4.5,72,Adventure,Laksa
+Perak,Perak District 18,219,66,74,50,A beautiful spot in Perak perfect for Adventure.,https://picsum.photos/seed/Perak18/400/250,3.6,83,Adventure,Char Kway Teow
+Perak,Perak District 19,316,91,15,50,A beautiful spot in Perak perfect for History.,https://picsum.photos/seed/Perak19/400/250,3.9,146,Leisure,Roti Canai
+Perak,Perak District 20,137,37,48,50,A beautiful spot in Perak perfect for Modern.,https://picsum.photos/seed/Perak20/400/250,4.3,67,Leisure,Roti Canai
+Perak,Perak District 21,400,88,12,50,A beautiful spot in Perak perfect for Nature.,https://picsum.photos/seed/Perak21/400/250,3.7,61,Nature,Cendol
+Perak,Perak District 22,381,53,38,50,A beautiful spot in Perak perfect for Adventure.,https://picsum.photos/seed/Perak22/400/250,4.9,126,Modern,Nasi Lemak
+Perak,Perak District 23,225,101,47,50,A beautiful spot in Perak perfect for History.,https://picsum.photos/seed/Perak23/400/250,4.6,65,History,Satay
+Perak,Perak District 24,206,31,69,50,A beautiful spot in Perak perfect for Modern.,https://picsum.photos/seed/Perak24/400/250,3.7,117,Modern,Nasi Lemak
+Perak,Perak District 25,321,34,38,50,A beautiful spot in Perak perfect for History.,https://picsum.photos/seed/Perak25/400/250,3.8,65,Foodie,Char Kway Teow
+Perak,Perak District 26,173,38,50,50,A beautiful spot in Perak perfect for Foodie.,https://picsum.photos/seed/Perak26/400/250,4.7,77,Foodie,Roti Canai
+Perak,Perak District 27,241,106,31,50,A beautiful spot in Perak perfect for Leisure.,https://picsum.photos/seed/Perak27/400/250,3.9,50,History,Laksa
+Perak,Perak District 28,213,88,47,50,A beautiful spot in Perak perfect for Leisure.,https://picsum.photos/seed/Perak28/400/250,4.1,124,Nature,Roti Canai
+Perak,Perak District 29,76,33,13,50,A beautiful spot in Perak perfect for Nature.,https://picsum.photos/seed/Perak29/400/250,3.9,28,History,Char Kway Teow
+Melaka,Melaka District 1,249,119,14,50,A beautiful spot in Melaka perfect for Foodie.,https://picsum.photos/seed/Melaka1/400/250,3.6,115,History,Nasi Lemak
+Melaka,Melaka District 2,220,83,39,50,A beautiful spot in Melaka perfect for Leisure.,https://picsum.photos/seed/Melaka2/400/250,3.7,95,Nature,Satay
+Melaka,Melaka District 3,244,60,41,50,A beautiful spot in Melaka perfect for History.,https://picsum.photos/seed/Melaka3/400/250,3.5,98,Modern,Nasi Lemak
+Melaka,Melaka District 4,204,69,21,50,A beautiful spot in Melaka perfect for Modern.,https://picsum.photos/seed/Melaka4/400/250,4.3,137,Nature,Cendol
+Melaka,Melaka District 5,173,106,18,50,A beautiful spot in Melaka perfect for Adventure.,https://picsum.photos/seed/Melaka5/400/250,4.2,27,Leisure,Cendol
+Melaka,Melaka District 6,190,93,16,50,A beautiful spot in Melaka perfect for Foodie.,https://picsum.photos/seed/Melaka6/400/250,4.5,41,Foodie,Char Kway Teow
+Melaka,Melaka District 7,307,119,33,50,A beautiful spot in Melaka perfect for Modern.,https://picsum.photos/seed/Melaka7/400/250,4.2,135,Nature,Roti Canai
+Melaka,Melaka District 8,368,114,52,50,A beautiful spot in Melaka perfect for Leisure.,https://picsum.photos/seed/Melaka8/400/250,4.5,76,Foodie,Cendol
+Melaka,Melaka District 9,354,96,52,50,A beautiful spot in Melaka perfect for Leisure.,https://picsum.photos/seed/Melaka9/400/250,4.2,61,History,Roti Canai
+Melaka,Melaka District 10,146,81,40,50,A beautiful spot in Melaka perfect for History.,https://picsum.photos/seed/Melaka10/400/250,3.8,29,Leisure,Roti Canai
+Melaka,Melaka District 11,382,41,63,50,A beautiful spot in Melaka perfect for History.,https://picsum.photos/seed/Melaka11/400/250,4.4,14,Adventure,Laksa
+Melaka,Melaka District 12,308,38,28,50,A beautiful spot in Melaka perfect for Leisure.,https://picsum.photos/seed/Melaka12/400/250,3.7,145,Modern,Roti Canai
+Melaka,Melaka District 13,161,51,67,50,A beautiful spot in Melaka perfect for Leisure.,https://picsum.photos/seed/Melaka13/400/250,4.7,49,Leisure,Cendol
+Melaka,Melaka District 14,303,63,79,50,A beautiful spot in Melaka perfect for Leisure.,https://picsum.photos/seed/Melaka14/400/250,3.9,140,Modern,Laksa
+Melaka,Melaka District 15,160,80,19,50,A beautiful spot in Melaka perfect for Adventure.,https://picsum.photos/seed/Melaka15/400/250,4.2,69,Modern,Satay
+Melaka,Melaka District 16,110,40,41,50,A beautiful spot in Melaka perfect for Foodie.,https://picsum.photos/seed/Melaka16/400/250,4.7,77,History,Roti Canai
+Melaka,Melaka District 17,325,107,15,50,A beautiful spot in Melaka perfect for Leisure.,https://picsum.photos/seed/Melaka17/400/250,3.9,121,Foodie,Char Kway Teow
+Melaka,Melaka District 18,341,39,35,50,A beautiful spot in Melaka perfect for Leisure.,https://picsum.photos/seed/Melaka18/400/250,3.9,124,Modern,Laksa
+Melaka,Melaka District 19,301,118,69,50,A beautiful spot in Melaka perfect for Leisure.,https://picsum.photos/seed/Melaka19/400/250,4.3,124,Adventure,Roti Canai
+Melaka,Melaka District 20,215,34,28,50,A beautiful spot in Melaka perfect for Leisure.,https://picsum.photos/seed/Melaka20/400/250,4.1,60,Nature,Char Kway Teow
+Melaka,Melaka District 21,371,115,38,50,A beautiful spot in Melaka perfect for Leisure.,https://picsum.photos/seed/Melaka21/400/250,4.4,69,Modern,Satay
+Melaka,Melaka District 22,227,68,76,50,A beautiful spot in Melaka perfect for Nature.,https://picsum.photos/seed/Melaka22/400/250,3.7,22,History,Char Kway Teow
+Melaka,Melaka District 23,295,78,65,50,A beautiful spot in Melaka perfect for Leisure.,https://picsum.photos/seed/Melaka23/400/250,4.1,41,Nature,Laksa
+Melaka,Melaka District 24,158,119,71,50,A beautiful spot in Melaka perfect for History.,https://picsum.photos/seed/Melaka24/400/250,5.0,11,Adventure,Char Kway Teow
+Melaka,Melaka District 25,247,51,29,50,A beautiful spot in Melaka perfect for Foodie.,https://picsum.photos/seed/Melaka25/400/250,3.7,133,Adventure,Satay
+Melaka,Melaka District 26,71,85,28,50,A beautiful spot in Melaka perfect for Leisure.,https://picsum.photos/seed/Melaka26/400/250,3.7,67,Adventure,Satay
+Melaka,Melaka District 27,367,104,79,50,A beautiful spot in Melaka perfect for Modern.,https://picsum.photos/seed/Melaka27/400/250,4.6,60,Leisure,Nasi Lemak
+Melaka,Melaka District 28,353,67,39,50,A beautiful spot in Melaka perfect for Leisure.,https://picsum.photos/seed/Melaka28/400/250,4.2,133,Modern,Satay
+Melaka,Melaka District 29,62,65,73,50,A beautiful spot in Melaka perfect for Nature.,https://picsum.photos/seed/Melaka29/400/250,4.1,42,Adventure,Laksa
+Pahang,Pahang District 1,188,116,31,50,A beautiful spot in Pahang perfect for Nature.,https://picsum.photos/seed/Pahang1/400/250,4.6,148,Modern,Laksa
+Pahang,Pahang District 2,164,77,76,50,A beautiful spot in Pahang perfect for Foodie.,https://picsum.photos/seed/Pahang2/400/250,4.5,20,History,Nasi Lemak
+Pahang,Pahang District 3,285,45,34,50,A beautiful spot in Pahang perfect for Leisure.,https://picsum.photos/seed/Pahang3/400/250,4.1,32,History,Laksa
+Pahang,Pahang District 4,268,47,48,50,A beautiful spot in Pahang perfect for Nature.,https://picsum.photos/seed/Pahang4/400/250,5.0,94,Modern,Satay
+Pahang,Pahang District 5,361,35,18,50,A beautiful spot in Pahang perfect for Modern.,https://picsum.photos/seed/Pahang5/400/250,4.9,107,Adventure,Satay
+Pahang,Pahang District 6,210,51,77,50,A beautiful spot in Pahang perfect for Foodie.,https://picsum.photos/seed/Pahang6/400/250,4.8,96,Nature,Satay
+Pahang,Pahang District 7,198,52,66,50,A beautiful spot in Pahang perfect for History.,https://picsum.photos/seed/Pahang7/400/250,3.6,5,Adventure,Char Kway Teow
+Pahang,Pahang District 8,161,88,44,50,A beautiful spot in Pahang perfect for Leisure.,https://picsum.photos/seed/Pahang8/400/250,4.9,31,Modern,Char Kway Teow
+Pahang,Pahang District 9,63,101,24,50,A beautiful spot in Pahang perfect for Foodie.,https://picsum.photos/seed/Pahang9/400/250,4.8,98,Modern,Satay
+Pahang,Pahang District 10,85,113,47,50,A beautiful spot in Pahang perfect for Nature.,https://picsum.photos/seed/Pahang10/400/250,4.4,34,Foodie,Cendol
+Pahang,Pahang District 11,345,110,65,50,A beautiful spot in Pahang perfect for Foodie.,https://picsum.photos/seed/Pahang11/400/250,4.0,129,Modern,Laksa
+Pahang,Pahang District 12,210,114,43,50,A beautiful spot in Pahang perfect for History.,https://picsum.photos/seed/Pahang12/400/250,3.8,59,Adventure,Nasi Lemak
+Pahang,Pahang District 13,200,120,25,50,A beautiful spot in Pahang perfect for Nature.,https://picsum.photos/seed/Pahang13/400/250,3.6,11,Adventure,Satay
+Pahang,Pahang District 14,265,76,59,50,A beautiful spot in Pahang perfect for Leisure.,https://picsum.photos/seed/Pahang14/400/250,4.4,21,Foodie,Roti Canai
+Pahang,Pahang District 15,267,36,56,50,A beautiful spot in Pahang perfect for Leisure.,https://picsum.photos/seed/Pahang15/400/250,4.2,6,Leisure,Char Kway Teow
+Pahang,Pahang District 16,102,44,36,50,A beautiful spot in Pahang perfect for Nature.,https://picsum.photos/seed/Pahang16/400/250,3.5,121,Adventure,Cendol
+Pahang,Pahang District 17,78,109,79,50,A beautiful spot in Pahang perfect for Nature.,https://picsum.photos/seed/Pahang17/400/250,3.7,52,Modern,Laksa
+Pahang,Pahang District 18,386,33,44,50,A beautiful spot in Pahang perfect for Nature.,https://picsum.photos/seed/Pahang18/400/250,4.2,88,Nature,Char Kway Teow
+Pahang,Pahang District 19,317,53,24,50,A beautiful spot in Pahang perfect for Nature.,https://picsum.photos/seed/Pahang19/400/250,4.4,20,Nature,Laksa
+Pahang,Pahang District 20,127,43,65,50,A beautiful spot in Pahang perfect for Foodie.,https://picsum.photos/seed/Pahang20/400/250,4.7,11,History,Cendol
+Pahang,Pahang District 21,311,58,59,50,A beautiful spot in Pahang perfect for Nature.,https://picsum.photos/seed/Pahang21/400/250,4.0,125,Foodie,Roti Canai
+Pahang,Pahang District 22,265,114,47,50,A beautiful spot in Pahang perfect for History.,https://picsum.photos/seed/Pahang22/400/250,4.6,54,Adventure,Cendol
+Pahang,Pahang District 23,365,40,39,50,A beautiful spot in Pahang perfect for Adventure.,https://picsum.photos/seed/Pahang23/400/250,3.8,108,Nature,Nasi Lemak
+Pahang,Pahang District 24,198,78,54,50,A beautiful spot in Pahang perfect for Modern.,https://picsum.photos/seed/Pahang24/400/250,3.6,146,Adventure,Cendol
+Pahang,Pahang District 25,72,60,35,50,A beautiful spot in Pahang perfect for Adventure.,https://picsum.photos/seed/Pahang25/400/250,4.4,65,Foodie,Cendol
+Pahang,Pahang District 26,229,103,62,50,A beautiful spot in Pahang perfect for History.,https://picsum.photos/seed/Pahang26/400/250,4.5,71,Foodie,Roti Canai
+Pahang,Pahang District 27,335,86,79,50,A beautiful spot in Pahang perfect for Leisure.,https://picsum.photos/seed/Pahang27/400/250,4.7,88,Nature,Cendol
+Pahang,Pahang District 28,86,66,75,50,A beautiful spot in Pahang perfect for Leisure.,https://picsum.photos/seed/Pahang28/400/250,3.7,16,Nature,Cendol
+Pahang,Pahang District 29,342,77,25,50,A beautiful spot in Pahang perfect for Foodie.,https://picsum.photos/seed/Pahang29/400/250,3.7,108,Modern,Char Kway Teow
+Terengganu,Terengganu District 1,353,30,10,50,A beautiful spot in Terengganu perfect for Adventure.,https://picsum.photos/seed/Terengganu1/400/250,4.5,64,History,Roti Canai
+Terengganu,Terengganu District 2,165,39,47,50,A beautiful spot in Terengganu perfect for Modern.,https://picsum.photos/seed/Terengganu2/400/250,4.6,60,Adventure,Satay
+Terengganu,Terengganu District 3,263,38,65,50,A beautiful spot in Terengganu perfect for History.,https://picsum.photos/seed/Terengganu3/400/250,4.4,42,Foodie,Roti Canai
+Terengganu,Terengganu District 4,342,43,20,50,A beautiful spot in Terengganu perfect for Nature.,https://picsum.photos/seed/Terengganu4/400/250,4.2,106,Nature,Satay
+Terengganu,Terengganu District 5,302,54,52,50,A beautiful spot in Terengganu perfect for Foodie.,https://picsum.photos/seed/Terengganu5/400/250,5.0,60,Foodie,Laksa
+Terengganu,Terengganu District 6,204,87,46,50,A beautiful spot in Terengganu perfect for Adventure.,https://picsum.photos/seed/Terengganu6/400/250,4.3,57,Modern,Roti Canai
+Terengganu,Terengganu District 7,166,80,69,50,A beautiful spot in Terengganu perfect for Modern.,https://picsum.photos/seed/Terengganu7/400/250,4.2,106,History,Nasi Lemak
+Terengganu,Terengganu District 8,179,82,51,50,A beautiful spot in Terengganu perfect for Leisure.,https://picsum.photos/seed/Terengganu8/400/250,4.5,90,Modern,Laksa
+Terengganu,Terengganu District 9,166,117,30,50,A beautiful spot in Terengganu perfect for Nature.,https://picsum.photos/seed/Terengganu9/400/250,4.4,101,Leisure,Cendol
+Terengganu,Terengganu District 10,215,51,20,50,A beautiful spot in Terengganu perfect for History.,https://picsum.photos/seed/Terengganu10/400/250,4.1,77,Leisure,Char Kway Teow
+Terengganu,Terengganu District 11,211,96,19,50,A beautiful spot in Terengganu perfect for Leisure.,https://picsum.photos/seed/Terengganu11/400/250,4.4,33,History,Nasi Lemak
+Terengganu,Terengganu District 12,399,88,57,50,A beautiful spot in Terengganu perfect for Adventure.,https://picsum.photos/seed/Terengganu12/400/250,4.0,118,Leisure,Nasi Lemak
+Terengganu,Terengganu District 13,136,66,24,50,A beautiful spot in Terengganu perfect for History.,https://picsum.photos/seed/Terengganu13/400/250,4.5,27,Leisure,Laksa
+Terengganu,Terengganu District 14,202,102,44,50,A beautiful spot in Terengganu perfect for Modern.,https://picsum.photos/seed/Terengganu14/400/250,4.9,43,Leisure,Roti Canai
+Terengganu,Terengganu District 15,352,71,13,50,A beautiful spot in Terengganu perfect for History.,https://picsum.photos/seed/Terengganu15/400/250,5.0,55,Foodie,Char Kway Teow
+Terengganu,Terengganu District 16,61,99,47,50,A beautiful spot in Terengganu perfect for Nature.,https://picsum.photos/seed/Terengganu16/400/250,3.9,7,Leisure,Char Kway Teow
+Terengganu,Terengganu District 17,61,84,79,50,A beautiful spot in Terengganu perfect for Leisure.,https://picsum.photos/seed/Terengganu17/400/250,4.5,22,Foodie,Laksa
+Terengganu,Terengganu District 18,90,98,59,50,A beautiful spot in Terengganu perfect for Modern.,https://picsum.photos/seed/Terengganu18/400/250,4.9,117,History,Roti Canai
+Terengganu,Terengganu District 19,207,45,40,50,A beautiful spot in Terengganu perfect for Leisure.,https://picsum.photos/seed/Terengganu19/400/250,4.2,130,Modern,Roti Canai
+Terengganu,Terengganu District 20,322,100,10,50,A beautiful spot in Terengganu perfect for Adventure.,https://picsum.photos/seed/Terengganu20/400/250,3.9,104,Modern,Char Kway Teow
+Terengganu,Terengganu District 21,112,55,54,50,A beautiful spot in Terengganu perfect for Adventure.,https://picsum.photos/seed/Terengganu21/400/250,3.8,118,Modern,Cendol
+Terengganu,Terengganu District 22,61,52,41,50,A beautiful spot in Terengganu perfect for Leisure.,https://picsum.photos/seed/Terengganu22/400/250,4.7,117,Nature,Laksa
+Terengganu,Terengganu District 23,272,89,42,50,A beautiful spot in Terengganu perfect for History.,https://picsum.photos/seed/Terengganu23/400/250,4.5,139,Adventure,Laksa
+Terengganu,Terengganu District 24,129,32,13,50,A beautiful spot in Terengganu perfect for Nature.,https://picsum.photos/seed/Terengganu24/400/250,3.7,96,Foodie,Cendol
+Terengganu,Terengganu District 25,85,118,35,50,A beautiful spot in Terengganu perfect for Leisure.,https://picsum.photos/seed/Terengganu25/400/250,3.9,40,Adventure,Cendol
+Terengganu,Terengganu District 26,67,46,56,50,A beautiful spot in Terengganu perfect for Leisure.,https://picsum.photos/seed/Terengganu26/400/250,4.5,102,Foodie,Char Kway Teow
+Terengganu,Terengganu District 27,346,33,69,50,A beautiful spot in Terengganu perfect for Nature.,https://picsum.photos/seed/Terengganu27/400/250,4.3,37,History,Char Kway Teow
+Terengganu,Terengganu District 28,323,101,39,50,A beautiful spot in Terengganu perfect for Modern.,https://picsum.photos/seed/Terengganu28/400/250,4.5,46,Modern,Char Kway Teow
+Terengganu,Terengganu District 29,383,61,43,50,A beautiful spot in Terengganu perfect for Modern.,https://picsum.photos/seed/Terengganu29/400/250,4.2,15,Modern,Nasi Lemak
+Kelantan,Kelantan District 1,319,30,40,50,A beautiful spot in Kelantan perfect for Adventure.,https://picsum.photos/seed/Kelantan1/400/250,4.3,74,Adventure,Cendol
+Kelantan,Kelantan District 2,302,70,76,50,A beautiful spot in Kelantan perfect for Foodie.,https://picsum.photos/seed/Kelantan2/400/250,3.6,123,Foodie,Char Kway Teow
+Kelantan,Kelantan District 3,58,73,36,50,A beautiful spot in Kelantan perfect for Foodie.,https://picsum.photos/seed/Kelantan3/400/250,4.3,12,History,Laksa
+Kelantan,Kelantan District 4,59,112,67,50,A beautiful spot in Kelantan perfect for Nature.,https://picsum.photos/seed/Kelantan4/400/250,4.7,96,Foodie,Char Kway Teow
+Kelantan,Kelantan District 5,109,39,79,50,A beautiful spot in Kelantan perfect for Foodie.,https://picsum.photos/seed/Kelantan5/400/250,4.1,142,Adventure,Char Kway Teow
+Kelantan,Kelantan District 6,212,85,56,50,A beautiful spot in Kelantan perfect for History.,https://picsum.photos/seed/Kelantan6/400/250,4.8,23,History,Char Kway Teow
+Kelantan,Kelantan District 7,301,32,17,50,A beautiful spot in Kelantan perfect for History.,https://picsum.photos/seed/Kelantan7/400/250,4.5,27,Nature,Roti Canai
+Kelantan,Kelantan District 8,218,58,40,50,A beautiful spot in Kelantan perfect for Modern.,https://picsum.photos/seed/Kelantan8/400/250,4.9,47,Adventure,Cendol
+Kelantan,Kelantan District 9,169,117,14,50,A beautiful spot in Kelantan perfect for Foodie.,https://picsum.photos/seed/Kelantan9/400/250,3.5,65,Leisure,Cendol
+Kelantan,Kelantan District 10,101,78,46,50,A beautiful spot in Kelantan perfect for Foodie.,https://picsum.photos/seed/Kelantan10/400/250,4.9,149,Foodie,Char Kway Teow
+Kelantan,Kelantan District 11,273,41,12,50,A beautiful spot in Kelantan perfect for Modern.,https://picsum.photos/seed/Kelantan11/400/250,3.6,134,Nature,Char Kway Teow
+Kelantan,Kelantan District 12,275,95,43,50,A beautiful spot in Kelantan perfect for Nature.,https://picsum.photos/seed/Kelantan12/400/250,4.2,47,Adventure,Satay
+Kelantan,Kelantan District 13,297,61,40,50,A beautiful spot in Kelantan perfect for Nature.,https://picsum.photos/seed/Kelantan13/400/250,4.2,15,Nature,Cendol
+Kelantan,Kelantan District 14,53,115,42,50,A beautiful spot in Kelantan perfect for Adventure.,https://picsum.photos/seed/Kelantan14/400/250,4.3,76,Foodie,Roti Canai
+Kelantan,Kelantan District 15,281,100,44,50,A beautiful spot in Kelantan perfect for Leisure.,https://picsum.photos/seed/Kelantan15/400/250,4.7,129,Nature,Cendol
+Kelantan,Kelantan District 16,139,70,53,50,A beautiful spot in Kelantan perfect for Adventure.,https://picsum.photos/seed/Kelantan16/400/250,3.5,116,Foodie,Roti Canai
+Kelantan,Kelantan District 17,355,46,40,50,A beautiful spot in Kelantan perfect for Foodie.,https://picsum.photos/seed/Kelantan17/400/250,4.9,99,Adventure,Nasi Lemak
+Kelantan,Kelantan District 18,142,72,43,50,A beautiful spot in Kelantan perfect for Modern.,https://picsum.photos/seed/Kelantan18/400/250,4.6,142,Adventure,Nasi Lemak
+Kelantan,Kelantan District 19,115,106,50,50,A beautiful spot in Kelantan perfect for Nature.,https://picsum.photos/seed/Kelantan19/400/250,4.2,48,Foodie,Cendol
+Kelantan,Kelantan District 20,388,76,23,50,A beautiful spot in Kelantan perfect for Nature.,https://picsum.photos/seed/Kelantan20/400/250,4.7,27,Modern,Nasi Lemak
+Kelantan,Kelantan District 21,75,57,68,50,A beautiful spot in Kelantan perfect for Adventure.,https://picsum.photos/seed/Kelantan21/400/250,4.2,67,Leisure,Roti Canai
+Kelantan,Kelantan District 22,294,39,66,50,A beautiful spot in Kelantan perfect for Adventure.,https://picsum.photos/seed/Kelantan22/400/250,4.1,52,Nature,Cendol
+Kelantan,Kelantan District 23,290,82,54,50,A beautiful spot in Kelantan perfect for History.,https://picsum.photos/seed/Kelantan23/400/250,4.3,134,Foodie,Satay
+Kelantan,Kelantan District 24,60,109,16,50,A beautiful spot in Kelantan perfect for Modern.,https://picsum.photos/seed/Kelantan24/400/250,3.5,60,Leisure,Laksa
+Kelantan,Kelantan District 25,400,72,45,50,A beautiful spot in Kelantan perfect for Foodie.,https://picsum.photos/seed/Kelantan25/400/250,4.4,88,Adventure,Char Kway Teow
+Kelantan,Kelantan District 26,118,41,35,50,A beautiful spot in Kelantan perfect for Leisure.,https://picsum.photos/seed/Kelantan26/400/250,4.0,89,History,Satay
+Kelantan,Kelantan District 27,298,48,61,50,A beautiful spot in Kelantan perfect for Modern.,https://picsum.photos/seed/Kelantan27/400/250,3.5,39,Adventure,Laksa
+Kelantan,Kelantan District 28,328,83,74,50,A beautiful spot in Kelantan perfect for History.,https://picsum.photos/seed/Kelantan28/400/250,4.1,25,Modern,Cendol
+Kelantan,Kelantan District 29,149,88,74,50,A beautiful spot in Kelantan perfect for History.,https://picsum.photos/seed/Kelantan29/400/250,4.0,75,Modern,Char Kway Teow
+Kedah,Kedah District 1,244,67,16,50,A beautiful spot in Kedah perfect for Adventure.,https://picsum.photos/seed/Kedah1/400/250,4.1,66,Adventure,Char Kway Teow
+Kedah,Kedah District 2,178,82,48,50,A beautiful spot in Kedah perfect for Foodie.,https://picsum.photos/seed/Kedah2/400/250,3.7,72,Modern,Char Kway Teow
+Kedah,Kedah District 3,56,111,32,50,A beautiful spot in Kedah perfect for History.,https://picsum.photos/seed/Kedah3/400/250,4.8,35,Nature,Nasi Lemak
+Kedah,Kedah District 4,358,115,58,50,A beautiful spot in Kedah perfect for Adventure.,https://picsum.photos/seed/Kedah4/400/250,4.6,59,History,Roti Canai
+Kedah,Kedah District 5,188,120,71,50,A beautiful spot in Kedah perfect for History.,https://picsum.photos/seed/Kedah5/400/250,3.7,135,History,Nasi Lemak
+Kedah,Kedah District 6,252,96,56,50,A beautiful spot in Kedah perfect for Modern.,https://picsum.photos/seed/Kedah6/400/250,4.1,12,Modern,Nasi Lemak
+Kedah,Kedah District 7,240,86,48,50,A beautiful spot in Kedah perfect for Adventure.,https://picsum.photos/seed/Kedah7/400/250,4.5,128,Nature,Roti Canai
+Kedah,Kedah District 8,378,116,47,50,A beautiful spot in Kedah perfect for Adventure.,https://picsum.photos/seed/Kedah8/400/250,4.0,129,Foodie,Laksa
+Kedah,Kedah District 9,68,104,56,50,A beautiful spot in Kedah perfect for Leisure.,https://picsum.photos/seed/Kedah9/400/250,4.8,135,Nature,Nasi Lemak
+Kedah,Kedah District 10,283,107,15,50,A beautiful spot in Kedah perfect for Modern.,https://picsum.photos/seed/Kedah10/400/250,3.9,72,History,Roti Canai
+Kedah,Kedah District 11,369,117,77,50,A beautiful spot in Kedah perfect for Leisure.,https://picsum.photos/seed/Kedah11/400/250,4.5,143,History,Cendol
+Kedah,Kedah District 12,393,102,80,50,A beautiful spot in Kedah perfect for Nature.,https://picsum.photos/seed/Kedah12/400/250,4.3,20,Nature,Nasi Lemak
+Kedah,Kedah District 13,77,88,69,50,A beautiful spot in Kedah perfect for Modern.,https://picsum.photos/seed/Kedah13/400/250,3.9,142,Nature,Satay
+Kedah,Kedah District 14,169,62,23,50,A beautiful spot in Kedah perfect for Adventure.,https://picsum.photos/seed/Kedah14/400/250,4.2,108,Nature,Char Kway Teow
+Kedah,Kedah District 15,217,57,67,50,A beautiful spot in Kedah perfect for Modern.,https://picsum.photos/seed/Kedah15/400/250,4.9,4,History,Satay
+Kedah,Kedah District 16,330,37,48,50,A beautiful spot in Kedah perfect for Leisure.,https://picsum.photos/seed/Kedah16/400/250,5.0,64,Nature,Satay
+Kedah,Kedah District 17,214,108,60,50,A beautiful spot in Kedah perfect for Leisure.,https://picsum.photos/seed/Kedah17/400/250,3.8,125,Leisure,Roti Canai
+Kedah,Kedah District 18,73,83,47,50,A beautiful spot in Kedah perfect for Modern.,https://picsum.photos/seed/Kedah18/400/250,3.8,137,Leisure,Roti Canai
+Kedah,Kedah District 19,112,110,33,50,A beautiful spot in Kedah perfect for Leisure.,https://picsum.photos/seed/Kedah19/400/250,4.4,127,Foodie,Char Kway Teow
+Kedah,Kedah District 20,238,82,40,50,A beautiful spot in Kedah perfect for Nature.,https://picsum.photos/seed/Kedah20/400/250,4.7,103,Leisure,Nasi Lemak
+Kedah,Kedah District 21,86,115,25,50,A beautiful spot in Kedah perfect for Adventure.,https://picsum.photos/seed/Kedah21/400/250,4.4,117,Nature,Char Kway Teow
+Kedah,Kedah District 22,97,82,38,50,A beautiful spot in Kedah perfect for Leisure.,https://picsum.photos/seed/Kedah22/400/250,5.0,14,Adventure,Satay
+Kedah,Kedah District 23,109,80,72,50,A beautiful spot in Kedah perfect for Adventure.,https://picsum.photos/seed/Kedah23/400/250,3.7,111,Modern,Char Kway Teow
+Kedah,Kedah District 24,310,48,71,50,A beautiful spot in Kedah perfect for Adventure.,https://picsum.photos/seed/Kedah24/400/250,4.4,65,Nature,Nasi Lemak
+Kedah,Kedah District 25,365,113,42,50,A beautiful spot in Kedah perfect for Nature.,https://picsum.photos/seed/Kedah25/400/250,4.5,43,Nature,Cendol
+Kedah,Kedah District 26,156,87,74,50,A beautiful spot in Kedah perfect for Leisure.,https://picsum.photos/seed/Kedah26/400/250,4.5,125,Leisure,Laksa
+Kedah,Kedah District 27,366,79,21,50,A beautiful spot in Kedah perfect for History.,https://picsum.photos/seed/Kedah27/400/250,4.2,35,Modern,Laksa
+Kedah,Kedah District 28,89,111,41,50,A beautiful spot in Kedah perfect for Leisure.,https://picsum.photos/seed/Kedah28/400/250,3.6,89,Nature,Satay
+Kedah,Kedah District 29,159,85,29,50,A beautiful spot in Kedah perfect for Foodie.,https://picsum.photos/seed/Kedah29/400/250,3.9,90,Adventure,Char Kway Teow
+Negeri Sembilan,Negeri Sembilan District 1,373,85,24,50,A beautiful spot in Negeri Sembilan perfect for Adventure.,https://picsum.photos/seed/Negeri Sembilan1/400/250,3.8,146,Foodie,Char Kway Teow
+Negeri Sembilan,Negeri Sembilan District 2,238,40,15,50,A beautiful spot in Negeri Sembilan perfect for Modern.,https://picsum.photos/seed/Negeri Sembilan2/400/250,4.6,81,History,Laksa
+Negeri Sembilan,Negeri Sembilan District 3,372,94,76,50,A beautiful spot in Negeri Sembilan perfect for Adventure.,https://picsum.photos/seed/Negeri Sembilan3/400/250,4.9,92,History,Satay
+Negeri Sembilan,Negeri Sembilan District 4,394,107,52,50,A beautiful spot in Negeri Sembilan perfect for History.,https://picsum.photos/seed/Negeri Sembilan4/400/250,4.3,78,Leisure,Cendol
+Negeri Sembilan,Negeri Sembilan District 5,383,47,49,50,A beautiful spot in Negeri Sembilan perfect for History.,https://picsum.photos/seed/Negeri Sembilan5/400/250,4.1,12,History,Laksa
+Negeri Sembilan,Negeri Sembilan District 6,250,93,49,50,A beautiful spot in Negeri Sembilan perfect for Nature.,https://picsum.photos/seed/Negeri Sembilan6/400/250,4.3,39,History,Cendol
+Negeri Sembilan,Negeri Sembilan District 7,397,111,79,50,A beautiful spot in Negeri Sembilan perfect for Modern.,https://picsum.photos/seed/Negeri Sembilan7/400/250,4.1,44,Adventure,Cendol
+Negeri Sembilan,Negeri Sembilan District 8,87,106,43,50,A beautiful spot in Negeri Sembilan perfect for History.,https://picsum.photos/seed/Negeri Sembilan8/400/250,4.5,71,Leisure,Nasi Lemak
+Negeri Sembilan,Negeri Sembilan District 9,264,30,76,50,A beautiful spot in Negeri Sembilan perfect for History.,https://picsum.photos/seed/Negeri Sembilan9/400/250,4.7,147,Modern,Laksa
+Negeri Sembilan,Negeri Sembilan District 10,187,30,77,50,A beautiful spot in Negeri Sembilan perfect for Nature.,https://picsum.photos/seed/Negeri Sembilan10/400/250,4.6,117,Modern,Char Kway Teow
+Negeri Sembilan,Negeri Sembilan District 11,89,120,36,50,A beautiful spot in Negeri Sembilan perfect for History.,https://picsum.photos/seed/Negeri Sembilan11/400/250,4.4,5,Leisure,Satay
+Negeri Sembilan,Negeri Sembilan District 12,364,34,59,50,A beautiful spot in Negeri Sembilan perfect for Modern.,https://picsum.photos/seed/Negeri Sembilan12/400/250,4.5,112,Foodie,Nasi Lemak
+Negeri Sembilan,Negeri Sembilan District 13,229,81,61,50,A beautiful spot in Negeri Sembilan perfect for Modern.,https://picsum.photos/seed/Negeri Sembilan13/400/250,4.4,139,Adventure,Nasi Lemak
+Negeri Sembilan,Negeri Sembilan District 14,300,71,45,50,A beautiful spot in Negeri Sembilan perfect for History.,https://picsum.photos/seed/Negeri Sembilan14/400/250,4.5,46,Adventure,Satay
+Negeri Sembilan,Negeri Sembilan District 15,236,46,23,50,A beautiful spot in Negeri Sembilan perfect for Foodie.,https://picsum.photos/seed/Negeri Sembilan15/400/250,3.7,41,Adventure,Roti Canai
+Negeri Sembilan,Negeri Sembilan District 16,50,35,79,50,A beautiful spot in Negeri Sembilan perfect for Modern.,https://picsum.photos/seed/Negeri Sembilan16/400/250,4.3,43,Nature,Laksa
+Negeri Sembilan,Negeri Sembilan District 17,365,103,49,50,A beautiful spot in Negeri Sembilan perfect for Nature.,https://picsum.photos/seed/Negeri Sembilan17/400/250,4.4,140,Adventure,Laksa
+Negeri Sembilan,Negeri Sembilan District 18,302,73,41,50,A beautiful spot in Negeri Sembilan perfect for History.,https://picsum.photos/seed/Negeri Sembilan18/400/250,5.0,125,Foodie,Nasi Lemak
+Negeri Sembilan,Negeri Sembilan District 19,291,88,56,50,A beautiful spot in Negeri Sembilan perfect for History.,https://picsum.photos/seed/Negeri Sembilan19/400/250,4.3,51,Nature,Laksa
+Negeri Sembilan,Negeri Sembilan District 20,94,52,55,50,A beautiful spot in Negeri Sembilan perfect for Leisure.,https://picsum.photos/seed/Negeri Sembilan20/400/250,4.0,32,Foodie,Laksa
+Negeri Sembilan,Negeri Sembilan District 21,236,33,31,50,A beautiful spot in Negeri Sembilan perfect for Adventure.,https://picsum.photos/seed/Negeri Sembilan21/400/250,4.3,53,Nature,Cendol
+Negeri Sembilan,Negeri Sembilan District 22,155,103,34,50,A beautiful spot in Negeri Sembilan perfect for Nature.,https://picsum.photos/seed/Negeri Sembilan22/400/250,4.6,62,Adventure,Laksa
+Negeri Sembilan,Negeri Sembilan District 23,384,37,11,50,A beautiful spot in Negeri Sembilan perfect for Leisure.,https://picsum.photos/seed/Negeri Sembilan23/400/250,4.6,139,Modern,Satay
+Negeri Sembilan,Negeri Sembilan District 24,193,48,10,50,A beautiful spot in Negeri Sembilan perfect for Leisure.,https://picsum.photos/seed/Negeri Sembilan24/400/250,4.0,53,Leisure,Roti Canai
+Negeri Sembilan,Negeri Sembilan District 25,345,111,31,50,A beautiful spot in Negeri Sembilan perfect for Nature.,https://picsum.photos/seed/Negeri Sembilan25/400/250,3.9,65,Foodie,Nasi Lemak
+Negeri Sembilan,Negeri Sembilan District 26,76,54,22,50,A beautiful spot in Negeri Sembilan perfect for Adventure.,https://picsum.photos/seed/Negeri Sembilan26/400/250,4.6,8,Foodie,Cendol
+Negeri Sembilan,Negeri Sembilan District 27,60,35,36,50,A beautiful spot in Negeri Sembilan perfect for Leisure.,https://picsum.photos/seed/Negeri Sembilan27/400/250,4.3,18,Foodie,Roti Canai
+Negeri Sembilan,Negeri Sembilan District 28,171,39,78,50,A beautiful spot in Negeri Sembilan perfect for Nature.,https://picsum.photos/seed/Negeri Sembilan28/400/250,4.0,12,Leisure,Char Kway Teow
+Negeri Sembilan,Negeri Sembilan District 29,278,70,75,50,A beautiful spot in Negeri Sembilan perfect for Modern.,https://picsum.photos/seed/Negeri Sembilan29/400/250,3.8,35,Nature,Roti Canai
+Sabah,Sabah District 1,51,52,54,50,A beautiful spot in Sabah perfect for Modern.,https://picsum.photos/seed/Sabah1/400/250,5.0,111,History,Satay
+Sabah,Sabah District 2,271,66,78,50,A beautiful spot in Sabah perfect for History.,https://picsum.photos/seed/Sabah2/400/250,3.9,85,Foodie,Roti Canai
+Sabah,Sabah District 3,130,47,36,50,A beautiful spot in Sabah perfect for Leisure.,https://picsum.photos/seed/Sabah3/400/250,4.4,49,Leisure,Cendol
+Sabah,Sabah District 4,305,106,62,50,A beautiful spot in Sabah perfect for Foodie.,https://picsum.photos/seed/Sabah4/400/250,3.7,51,Adventure,Char Kway Teow
+Sabah,Sabah District 5,383,108,77,50,A beautiful spot in Sabah perfect for Foodie.,https://picsum.photos/seed/Sabah5/400/250,3.5,29,Foodie,Nasi Lemak
+Sabah,Sabah District 6,364,105,26,50,A beautiful spot in Sabah perfect for Leisure.,https://picsum.photos/seed/Sabah6/400/250,3.6,117,Modern,Roti Canai
+Sabah,Sabah District 7,287,77,80,50,A beautiful spot in Sabah perfect for Modern.,https://picsum.photos/seed/Sabah7/400/250,4.0,7,Modern,Char Kway Teow
+Sabah,Sabah District 8,159,39,25,50,A beautiful spot in Sabah perfect for Leisure.,https://picsum.photos/seed/Sabah8/400/250,4.3,150,Adventure,Nasi Lemak
+Sabah,Sabah District 9,61,50,11,50,A beautiful spot in Sabah perfect for Foodie.,https://picsum.photos/seed/Sabah9/400/250,4.7,113,History,Nasi Lemak
+Sabah,Sabah District 10,255,72,19,50,A beautiful spot in Sabah perfect for Modern.,https://picsum.photos/seed/Sabah10/400/250,4.0,17,Foodie,Cendol
+Sabah,Sabah District 11,151,67,26,50,A beautiful spot in Sabah perfect for Adventure.,https://picsum.photos/seed/Sabah11/400/250,3.5,53,Nature,Nasi Lemak
+Sabah,Sabah District 12,167,120,60,50,A beautiful spot in Sabah perfect for Modern.,https://picsum.photos/seed/Sabah12/400/250,3.9,28,Nature,Char Kway Teow
+Sabah,Sabah District 13,257,75,65,50,A beautiful spot in Sabah perfect for Foodie.,https://picsum.photos/seed/Sabah13/400/250,4.6,32,Foodie,Char Kway Teow
+Sabah,Sabah District 14,349,92,24,50,A beautiful spot in Sabah perfect for Leisure.,https://picsum.photos/seed/Sabah14/400/250,3.6,136,Leisure,Char Kway Teow
+Sabah,Sabah District 15,153,115,44,50,A beautiful spot in Sabah perfect for Leisure.,https://picsum.photos/seed/Sabah15/400/250,3.5,10,Adventure,Nasi Lemak
+Sabah,Sabah District 16,96,69,76,50,A beautiful spot in Sabah perfect for Nature.,https://picsum.photos/seed/Sabah16/400/250,3.8,8,Nature,Char Kway Teow
+Sabah,Sabah District 17,108,49,70,50,A beautiful spot in Sabah perfect for Nature.,https://picsum.photos/seed/Sabah17/400/250,5.0,87,Foodie,Cendol
+Sabah,Sabah District 18,362,110,31,50,A beautiful spot in Sabah perfect for Leisure.,https://picsum.photos/seed/Sabah18/400/250,4.2,122,Adventure,Cendol
+Sabah,Sabah District 19,146,111,23,50,A beautiful spot in Sabah perfect for Adventure.,https://picsum.photos/seed/Sabah19/400/250,4.2,48,Modern,Satay
+Sabah,Sabah District 20,391,50,36,50,A beautiful spot in Sabah perfect for Nature.,https://picsum.photos/seed/Sabah20/400/250,4.0,45,Nature,Satay
+Sabah,Sabah District 21,183,96,47,50,A beautiful spot in Sabah perfect for Modern.,https://picsum.photos/seed/Sabah21/400/250,3.9,70,Foodie,Laksa
+Sabah,Sabah District 22,133,46,56,50,A beautiful spot in Sabah perfect for Adventure.,https://picsum.photos/seed/Sabah22/400/250,4.3,130,Foodie,Char Kway Teow
+Sabah,Sabah District 23,181,88,12,50,A beautiful spot in Sabah perfect for Adventure.,https://picsum.photos/seed/Sabah23/400/250,4.4,126,Nature,Cendol
+Sabah,Sabah District 24,356,47,77,50,A beautiful spot in Sabah perfect for History.,https://picsum.photos/seed/Sabah24/400/250,4.5,55,Modern,Satay
+Sabah,Sabah District 25,398,70,55,50,A beautiful spot in Sabah perfect for Leisure.,https://picsum.photos/seed/Sabah25/400/250,4.9,49,Foodie,Nasi Lemak
+Sabah,Sabah District 26,90,72,36,50,A beautiful spot in Sabah perfect for Adventure.,https://picsum.photos/seed/Sabah26/400/250,3.8,57,Nature,Char Kway Teow
+Sabah,Sabah District 27,321,71,13,50,A beautiful spot in Sabah perfect for Foodie.,https://picsum.photos/seed/Sabah27/400/250,4.0,29,Modern,Roti Canai
+Sabah,Sabah District 28,385,41,79,50,A beautiful spot in Sabah perfect for Adventure.,https://picsum.photos/seed/Sabah28/400/250,3.8,4,Foodie,Nasi Lemak
+Sabah,Sabah District 29,184,59,78,50,A beautiful spot in Sabah perfect for Leisure.,https://picsum.photos/seed/Sabah29/400/250,4.4,75,Foodie,Nasi Lemak
+Sarawak,Sarawak District 1,390,118,19,50,A beautiful spot in Sarawak perfect for History.,https://picsum.photos/seed/Sarawak1/400/250,3.6,63,Foodie,Char Kway Teow
+Sarawak,Sarawak District 2,346,45,52,50,A beautiful spot in Sarawak perfect for Foodie.,https://picsum.photos/seed/Sarawak2/400/250,4.0,3,Leisure,Char Kway Teow
+Sarawak,Sarawak District 3,86,112,63,50,A beautiful spot in Sarawak perfect for Modern.,https://picsum.photos/seed/Sarawak3/400/250,5.0,51,Nature,Laksa
+Sarawak,Sarawak District 4,189,33,70,50,A beautiful spot in Sarawak perfect for Modern.,https://picsum.photos/seed/Sarawak4/400/250,3.8,2,History,Roti Canai
+Sarawak,Sarawak District 5,229,67,28,50,A beautiful spot in Sarawak perfect for Leisure.,https://picsum.photos/seed/Sarawak5/400/250,3.8,100,Leisure,Nasi Lemak
+Sarawak,Sarawak District 6,286,113,65,50,A beautiful spot in Sarawak perfect for Leisure.,https://picsum.photos/seed/Sarawak6/400/250,4.4,129,Foodie,Char Kway Teow
+Sarawak,Sarawak District 7,324,70,74,50,A beautiful spot in Sarawak perfect for Modern.,https://picsum.photos/seed/Sarawak7/400/250,3.7,87,Nature,Roti Canai
+Sarawak,Sarawak District 8,86,60,18,50,A beautiful spot in Sarawak perfect for Modern.,https://picsum.photos/seed/Sarawak8/400/250,3.8,116,Foodie,Cendol
+Sarawak,Sarawak District 9,62,95,76,50,A beautiful spot in Sarawak perfect for Modern.,https://picsum.photos/seed/Sarawak9/400/250,3.9,88,Adventure,Satay
+Sarawak,Sarawak District 10,249,97,28,50,A beautiful spot in Sarawak perfect for Modern.,https://picsum.photos/seed/Sarawak10/400/250,3.5,73,Modern,Roti Canai
+Sarawak,Sarawak District 11,399,62,58,50,A beautiful spot in Sarawak perfect for Foodie.,https://picsum.photos/seed/Sarawak11/400/250,4.3,111,Adventure,Satay
+Sarawak,Sarawak District 12,72,98,66,50,A beautiful spot in Sarawak perfect for Adventure.,https://picsum.photos/seed/Sarawak12/400/250,3.9,105,Leisure,Satay
+Sarawak,Sarawak District 13,101,60,37,50,A beautiful spot in Sarawak perfect for History.,https://picsum.photos/seed/Sarawak13/400/250,3.9,147,Modern,Cendol
+Sarawak,Sarawak District 14,219,83,35,50,A beautiful spot in Sarawak perfect for History.,https://picsum.photos/seed/Sarawak14/400/250,3.5,57,History,Laksa
+Sarawak,Sarawak District 15,400,92,79,50,A beautiful spot in Sarawak perfect for Foodie.,https://picsum.photos/seed/Sarawak15/400/250,4.6,88,History,Roti Canai
+Sarawak,Sarawak District 16,200,38,15,50,A beautiful spot in Sarawak perfect for History.,https://picsum.photos/seed/Sarawak16/400/250,3.8,58,Adventure,Char Kway Teow
+Sarawak,Sarawak District 17,56,77,14,50,A beautiful spot in Sarawak perfect for Nature.,https://picsum.photos/seed/Sarawak17/400/250,4.4,85,Foodie,Roti Canai
+Sarawak,Sarawak District 18,283,114,32,50,A beautiful spot in Sarawak perfect for Modern.,https://picsum.photos/seed/Sarawak18/400/250,3.7,49,Modern,Laksa
+Sarawak,Sarawak District 19,170,84,61,50,A beautiful spot in Sarawak perfect for Nature.,https://picsum.photos/seed/Sarawak19/400/250,3.9,102,History,Roti Canai
+Sarawak,Sarawak District 20,299,74,26,50,A beautiful spot in Sarawak perfect for History.,https://picsum.photos/seed/Sarawak20/400/250,3.5,143,Nature,Cendol
+Sarawak,Sarawak District 21,118,64,73,50,A beautiful spot in Sarawak perfect for Foodie.,https://picsum.photos/seed/Sarawak21/400/250,4.7,140,Modern,Roti Canai
+Sarawak,Sarawak District 22,308,49,76,50,A beautiful spot in Sarawak perfect for History.,https://picsum.photos/seed/Sarawak22/400/250,3.8,79,Adventure,Roti Canai
+Sarawak,Sarawak District 23,131,58,43,50,A beautiful spot in Sarawak perfect for History.,https://picsum.photos/seed/Sarawak23/400/250,4.7,46,Adventure,Nasi Lemak
+Sarawak,Sarawak District 24,109,35,16,50,A beautiful spot in Sarawak perfect for History.,https://picsum.photos/seed/Sarawak24/400/250,4.2,118,Foodie,Char Kway Teow
+Sarawak,Sarawak District 25,377,87,34,50,A beautiful spot in Sarawak perfect for Adventure.,https://picsum.photos/seed/Sarawak25/400/250,4.2,119,Leisure,Nasi Lemak
+Sarawak,Sarawak District 26,51,30,78,50,A beautiful spot in Sarawak perfect for History.,https://picsum.photos/seed/Sarawak26/400/250,3.7,120,Leisure,Nasi Lemak
+Sarawak,Sarawak District 27,105,117,45,50,A beautiful spot in Sarawak perfect for Adventure.,https://picsum.photos/seed/Sarawak27/400/250,4.0,3,Modern,Nasi Lemak
+Sarawak,Sarawak District 28,116,31,35,50,A beautiful spot in Sarawak perfect for Modern.,https://picsum.photos/seed/Sarawak28/400/250,4.5,94,Adventure,Cendol
+Sarawak,Sarawak District 29,295,104,27,50,A beautiful spot in Sarawak perfect for History.,https://picsum.photos/seed/Sarawak29/400/250,4.2,25,Foodie,Cendol
