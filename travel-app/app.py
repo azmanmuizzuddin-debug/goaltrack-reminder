@@ -178,48 +178,50 @@ def show_results_page(df):
     city_data = df[df['City'] == st.session_state.selected_city].iloc[0]
     total, _, acc, food = calculate_costs(city_data, st.session_state.adults, st.session_state.kids, st.session_state.days)
 
-    st.markdown(f"### 🌴 {city_data['City']} Itinerary")
-    st.image(city_data['Image_URL'], use_container_width=True)
+    # 1. Header & Image (Top of your sketch)
+    st.markdown(f"## 🌴 {city_data['City']} Itinerary")
+    if city_data['Image_URL'] and str(city_data['Image_URL']) != "0":
+        st.image(city_data['Image_URL'], use_container_width=True)
     
-    # The "No-Time-To-Choose" Suggestion Box
-    st.info(f"✨ **N-AME Suggestion:** Since you want a `{city_data['Vibe']}` vibe, we recommend visiting the local spots near {city_data['City']} within {city_data['Distance_Hub']}km.")
-
+    # 2. Details Section (The white box in your sketch)
     with st.container(border=True):
-        st.write("📝 **Booking Summary**")
-        st.write(f"🏨 Stay ({st.session_state.days} days): `${acc * st.session_state.days:,.2f}`")
-        st.write(f"🍜 Food & Misc: `${food * st.session_state.days:,.2f}`")
-        st.divider()
-        st.markdown(f"### Total: `${total:,.2f}`")
+        st.write("### 📄 Details")
+        st.write(f"{city_data['Description']}")
+        
+        # 3. Comments Area (Sub-section in your sketch)
+        st.markdown("#### 💬 Comments")
+        st.caption("⭐⭐⭐⭐⭐ 'The view was breathtaking, definitely coming back!' - @traveler_amy")
+        st.caption("⭐⭐⭐⭐ 'Great food spots nearby, but bring an umbrella.' - @zack_fly")
 
-    if st.button("🚀 Book My Trip"):
+    # 4. Foods Section (The horizontal bar in your sketch)
+    st.write("### 🍜 Local Foods")
+    f1, f2, f3 = st.columns(3)
+    # Using placeholders for now since we haven't added food images to CSV yet
+    f1.image("https://via.placeholder.com/150?text=Food+1", caption="Signature Dish")
+    f2.image("https://via.placeholder.com/150?text=Food+2", caption="Local Drink")
+    f3.image("https://via.placeholder.com/150?text=Food+3", caption="Dessert")
+
+    # 5. Activities Section (The bottom list in your sketch)
+    st.write("### 🎯 Activities")
+    # We split the 'Activities' column we made earlier
+    if 'Activities' in city_data:
+        acts = city_data['Activities'].split(", ")
+        for a in acts:
+            with st.container(border=True):
+                col_icon, col_txt = st.columns([1, 4])
+                col_icon.write("📍") # Icon placeholder
+                col_txt.write(f"**{a}**")
+
+    # 6. Booking Summary & Buttons (Footer)
+    st.divider()
+    st.write(f"💰 **Estimated Total: ${total:,.2f}**")
+    
+    col_btn1, col_btn2 = st.columns(2)
+    if col_btn1.button("🚀 Book My Trip"):
         st.balloons()
-        st.success("Requesting Booking... You're going to Malaysia!")
-
-    if st.button("⬅️ Back", type="secondary"):
+    if col_btn2.button("⬅️ Back", type="secondary"):
         st.session_state.page = "discovery"
         st.rerun()
-
-    st.write("### 💡 N-AME Personal Recommendations")
-    
-    rec_col1, rec_col2 = st.columns(2)
-    
-    with rec_col1:
-        st.write("🚗 **Your Ride**")
-        if st.session_state.transport == "Rent Car":
-            st.success("We've flagged nearby car rentals. Est: $30/day.")
-        elif st.session_state.transport == "Public":
-            st.info("Pro Tip: Download the 'Grab' app for easy travel here.")
-        else:
-            st.write("Walking & local buses are great in this area!")
-
-    with rec_col2:
-        st.write("🍱 **Top Eats**")
-        if st.session_state.dining == "Local Stalls":
-            st.warning("Don't miss the Night Market! Open from 6 PM.")
-        elif st.session_state.dining == "Hotel":
-            st.success("Your hotel has a 4.5⭐ rated breakfast buffet.")
-        else:
-            st.write("Mix it up: Hotel breakfast, Street food dinner!")
 
 # --- 7. MAIN APP ---
 def main():
